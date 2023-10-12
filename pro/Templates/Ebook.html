@@ -1,0 +1,121 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <!-- Include Bootstrap CSS via a CDN -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+  <link rel="stylesheet" href="{% static 'css/footer.css'%}">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar fixed-top p-md-1">
+    <div class="container">
+      <!-- mb-0 h1 -->
+      <a class="navbar-brand " href="index.html">
+        <img src="{% static 'image/evey.png'%} "width="120" height="60" alt="" loading="lazy"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class=" navbar-nav  ">
+          <!-- <ul class="nav justify-content-end"> -->
+          <li class="nav-item active">
+            <a class="nav-link" href="/Tech-World/">Home <span class="sr-only">(current)</span></a>
+          </li>
+        
+          <li class="nav-item">
+            <a class="nav-link" href="/Tech-World/freeCourse.html">Free Courses</a>
+          </li>
+
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Tech-World/programminghub.html">Programming Hub</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Tech-World/Ebook.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Tech-World/signup.html">Sign-Up</a>
+          </li>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <!-- Your contact form goes here -->
+
+    <!-- Include Bootstrap JS and jQuery for Bootstrap functionality -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <div class="container">
+      <h2>jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj</h2>
+      <h2>iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii</h2>
+      <h2 class="mt-5"><center>Contact Us</center></h2>
+        <form  method="POST" action="/Tech-World/Ebook.html" >{% csrf_token %}
+          <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+              <label for="message">Message</label>
+              <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+  </div>
+  <div>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          
+          <div class="footer-col">
+            <h4>Evey.</h4>
+            <ul>
+              <li><a href="index.html">E-Learning Platform</a></li>
+              <li><a href="#">Since 2023</a></li>
+            </ul> 
+          </div>
+          <div class="footer-col">
+            <h4>About us</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">Ebooks</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Contact</h4>
+            <ul>
+              <li><a href="#">evabirami17@gmail.com</a></li>
+              <li><a href="#">Phone: +91 6383066439</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="https://github.com/evabirami17"><i class="fab fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/ev-abirami1709/"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://www.instagram.com/_1.7.2.0.0.3_/"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  
+</body>
+</html>
